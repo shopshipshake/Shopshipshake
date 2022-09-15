@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用JavaScript脚本实现form表单的提交与重置</title>
+    <meta name="author" content="pan_junbiao的博客">
+</head>
+<body>
+    <form name="myForm">
+        <table align="center">
+            <caption>用户注册</caption>
+            <tr>
+                <td>博客信息：</td>
+                <td>
+                    <label>您好，欢迎访问 pan_junbiao的博客</label>
+                </td>
+            </tr>
+            <tr>
+                <td>博客地址：</td>
+                <td>
+                    <label>https://blog.csdn.net/pan_junbiao</label>
+                </td>
+            </tr>
+            <tr>
+                <td>登录账户：</td>
+                <td>
+                   <input type="text" name="loginName" />
+                </td>
+            </tr>
+            <tr>
+                <td>登录密码：</td>
+                <td>
+                    <input type="password" name="loginPwd" />
+                </td>
+            </tr>
+            <!-- 以下是提交、取消按钮 -->
+            <tr>
+                <td colspan="2" style="text-align: center; padding: 5px;">
+                    <input type="button" value="提交" onclick="submitFrom()"/>
+                    <input type="button" value="重置" onclick="resetFrom()"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
